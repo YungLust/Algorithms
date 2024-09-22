@@ -1,0 +1,1 @@
+gcc -Werror -I./lib Sentiel.c -L./lib -lutils -o Sentiel
