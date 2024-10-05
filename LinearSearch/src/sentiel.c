@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int alg(int arr[], int n, int key) {
-  int res;
   int last;
   last = arr[n - 1]; // save the last element of arr
   int i = 0;
@@ -11,13 +10,12 @@ int alg(int arr[], int n, int key) {
   }
 
   // we can merge conditions because
-  // if the last==key it means that 'i' is the index of last element
+  // if the last==key it means that 'i' is alredy has the index of last element
   if (i < n || last == key) {
-    res = i;
+    return i;
   } else {
-    res = -1;
+    return -1;
   }
-  return res;
 }
 
 int main() {
