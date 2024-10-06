@@ -25,7 +25,7 @@ int main() {
   generate(arr, n, n + 100);
   printIntArr(arr, n);
   int res = alg(arr, n, key);
-  if (res > 0) {
+  if (res >= 0) {
     printf("The value of [%d] was found with the index [%d]\n", key, res);
   } else {
     printf("Value [%d] was not found!\n", key);
