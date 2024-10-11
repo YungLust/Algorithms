@@ -1,4 +1,4 @@
-#include "../lib/utils.h"
+#include "../../lib/utils.h"
 #include <stdio.h>
 
 int alg(int arr[], int n, int key) {

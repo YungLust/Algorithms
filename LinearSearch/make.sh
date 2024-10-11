@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 if [ -n "$1" ]; then
   echo "Compilling $1.c"
-  gcc -Werror -I ./lib ./src/$1.c -L ./lib -l utils -o ./out/$1
+  gcc -Werror -I ../lib ./src/$1.c -L ../lib -l utils -o ./out/$1
   #check if gcc ended well
   if [ $? -ne 0 ]; then # '$?' the output of the last commnad
     echo "Compilation failed!"
