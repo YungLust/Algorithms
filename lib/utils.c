@@ -30,3 +30,14 @@ void printIntArr(int arr[], int n) {
   }
   printf("\n");
 }
+
+void printIntArrBounded(int arr[], int n, int l, int r) {
+  if (r > n || l < 0) {
+    printf("printIntArrBouned failed! Out of array!\n");
+  } else {
+    for (int i = l; i < r; i++) {
+      printf("%d ", arr[i]);
+    }
+    printf("\n");
+  }
+}
