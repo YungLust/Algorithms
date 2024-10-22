@@ -6,6 +6,7 @@ public class Main {
 
         int[] genNumbers = Generate.intArray(30,150);
         System.out.println(Arrays.toString(genNumbers));
+        int[] genNumbers2 = genNumbers.clone();
 
         //create sorter with buble sort strategy
         Sorter sorter = new Sorter(new BubbleSort());
@@ -13,6 +14,11 @@ public class Main {
         //now we can sort
         sorter.sort(genNumbers);
 
-        System.out.println(Arrays.toString(genNumbers));
+        //now we change to another sorting strategy
+        sorter.setStrategy(new SelectionSort());
+        sorter.sort(genNumbers2);
+
+        System.out.println("Bubble sort: "+Arrays.toString(genNumbers));
+        System.out.println("Selection sort: "+Arrays.toString(genNumbers2));
     }
 }
