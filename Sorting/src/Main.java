@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] genNumbers = Generate.intArray(900, 8150);
+        int[] genNumbers = Generate.intArray(20, 50);
         int[] genNumbers2 = genNumbers.clone();
         int[] genNumbers3 = genNumbers.clone();
         System.out.println(Arrays.toString(genNumbers));

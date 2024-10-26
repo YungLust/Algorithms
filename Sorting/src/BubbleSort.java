@@ -8,7 +8,7 @@ class BubbleSort implements SortStrategy {
         for (int i = 0; i < n - 1; i++) {
             operationNumber += 3;//j init + for
             for (int j = 0; j < n - i - 1; j++) {
-                operationNumber += 2;
+                operationNumber += 3;
                 if (arr[j] > arr[j + 1]) {
                     operationNumber += 3;
                     int temp = arr[j + 1];
