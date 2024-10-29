@@ -1,3 +1,9 @@
+/*
+ * dont use insertion sort if array is backwards
+ * the complexity will be n^2
+ * Use it if some part of array is already sorted
+ */
+
 public class InsertionSort implements SortStrategy {
     private int operationNumber;
 

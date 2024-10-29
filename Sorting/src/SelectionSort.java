@@ -1,5 +1,7 @@
-import java.util.Arrays;
-
+/*
+ * Use selection sort if changing array elements is too long
+ * For example running this algorithm on very old hard drive
+ */
 public class SelectionSort implements SortStrategy {
     private int operationNumber;
 
