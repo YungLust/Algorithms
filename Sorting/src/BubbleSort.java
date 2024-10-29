@@ -1,5 +1,5 @@
 /*
- * bubble sort is used when your array is particulary sorted
+ * bubble sort is used when your array is particularly sorted
 */
 class BubbleSort implements SortStrategy {
     private int operationNumber;
