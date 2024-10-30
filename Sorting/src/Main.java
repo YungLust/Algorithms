@@ -4,10 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] genNumbers = Generate.intArray(1000, 12550);
+        int[] genNumbers = Generate.intArray(250, 1000);
         int[] genNumbers2 = genNumbers.clone();
         int[] genNumbers3 = genNumbers.clone();
         int[] genNumbers4 = genNumbers.clone();
+        int[] genNumbers5 = genNumbers.clone();
         System.out.println(Arrays.toString(genNumbers));
 
         //create different sort strategies
@@ -15,6 +16,7 @@ public class Main {
         SelectionSort selectionS = new SelectionSort();
         BubbleSort bubbleS = new BubbleSort();
         MergeSort mergeS = new MergeSort();
+        QuickSort quickS = new QuickSort();
 
         //choose sorting strategy for Sorter
         Sorter sorter = new Sorter(bubbleS);
@@ -27,6 +29,8 @@ public class Main {
         sorter.sort(genNumbers3);
         sorter.setStrategy(mergeS);
         sorter.sort(genNumbers4);
+        sorter.setStrategy(quickS);
+        sorter.sort(genNumbers5);
 
 
         System.out.println("Bubble sort: " + Arrays.toString(genNumbers));
@@ -37,5 +41,8 @@ public class Main {
         System.out.println("Number of operations: " + insertionS.getOperationNumber());
         System.out.println("Merge sort: " + Arrays.toString(genNumbers4));
         System.out.println("Number of operations: " + mergeS.getOperationNumber());
+        System.out.println("Quick sort: " + Arrays.toString(genNumbers5));
+        System.out.println("Number of operations: " + quickS.getOperationNumber());
+
     }
 }
